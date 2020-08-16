@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bakery-body {
+  display: flex;
+  justify-content: center;
+  font-family: arial;
+  padding-top: 100px;
+  padding-bottom: 63px
+}
+.dark-mode {
+  background: #1a1919;
+}
+.dark-mode .box {
+  background: #222
+}
+.dark-mode .circle {
+  background: #222
+}
+.dark-mode .sun {
+  background: #3f3d3b
+}
+.dark-mode .cookery {
+  background: #3f3d3b;
+  color: #fff;
+  border: none
+}
+.sun {
+  position: absolute;
+  background: yellow;
+  height: 120px;
+  width:  120px;
+  border-radius: 100px;
+  left: 60%;
+  top: 20px;
+  cursor: pointer
+}
+.house-body {
+  position: relative
+}
+#triangulo{
+  width:0;
+  height:0;
+  border-bottom:200px solid #ff7f4f;
+  border-left: 200px solid transparent; 
+  border-right: 200px solid transparent;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 400px;
+/*   margin: 30px; */
+  background: 	#D3D3D3;
+}
+.cookery {
+  position: absolute;
+  border: 2px solid #19a119;
+  background: #90ee90;
+  text-align: center;
+  padding: 10px;
+  color: #19a119;
+  width: 150px;
+  top: 35%;
+  left: 30%
+}
+.circle {
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+  border: 2px solid #72bcd4;
+  border-radius: 100px;
+  background: #add8e6;
+  cursor: pointer;
+
+}
+.circle-1 {
+  position: absolute;
+  top: 47%;
+  left: 9%;
+}
+.hover-switch-1 img {
+    position: absolute;
+    top: 45%;
+    left: 14.5%;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -ms-transition-property: -ms-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.circle-2 {
+  position: absolute;
+  top: 48%;
+  left: 71%
+  
+}
+.hover-switch-2 img {
+    position: absolute;
+    top: 45%;
+    left: 76.5%;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -ms-transition-property: -ms-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.hover-switch-1:hover img, .hover-switch-2:hover img {
+  opacity: 1;
+  transform: translateY(25px)
+
+}
+
+.dark-mode .hover-switch-1:hover img, .dark-mode .hover-switch-2:hover img {
+  opacity: 0;
+  transition: opacity 0.5s all ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.door {
+  position: absolute;
+  background: 	#ff9248;
+  height: 200px;
+  width: 120px;
+  top: 60%;
+  left: 35%;
+  cursor: pointer;
+}
+.handle {
+  position: absolute;
+  height: 4px;
+  width: 20px;
+  background: #793802;
+  top: 50%;
+  left: 4%
+}
+.dark-mode .mail-box {
+  background: #333
+}
+.mail-box {
+  position: absolute;
+  height: 80px;
+  width: 100px;
+  top: 70%;
+  background: #909090;
+  left: 70%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -ms-transition-property: -ms-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.line {
+  position: absolute;
+  z-index: 1;
+  width: 75px;
+  height: 10px;
+  background: #6a6866;
+  top: 15%;
+  left: 12%;
+}
+#checkmail {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  display: none;
+}
+h4 {
+  color: #676767;
+  margin-top: 30px
+}
+
+#checkmail:checked + label .mail-box {
+  -webkit-transform: translateY(115px);
+  -moz-transform: translateY(115px);
+  -ms-transform: translateY(115px);
+  -o-transform: translateY(115px);
+  transform: translateY(115px) rotate(30Deg);
+}
