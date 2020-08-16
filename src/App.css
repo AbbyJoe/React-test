@@ -77,13 +77,13 @@ body {
 }
 .circle-1 {
   position: absolute;
-  top: 47%;
-  left: 9%;
+  top: 48%;
+  left: 7%;
 }
 .hover-switch-1 img {
     position: absolute;
     top: 45%;
-    left: 14.5%;
+    left: 12.5%;
     opacity: 0;
     cursor: pointer;
     -webkit-transition-duration: 1s;
@@ -141,7 +141,7 @@ body {
   height: 200px;
   width: 120px;
   top: 60%;
-  left: 35%;
+  left: 36%;
   cursor: pointer;
 }
 .handle {
